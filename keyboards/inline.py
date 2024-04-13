@@ -9,6 +9,15 @@ main = InlineKeyboardMarkup(
     ]
 )
 
+chlang = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text='Русский', callback_data='rus'),
+            InlineKeyboardButton(text="English", callback_data="eng")
+        ]
+    ]
+)
+
 langs = InlineKeyboardMarkup(
     inline_keyboard=[
         [
