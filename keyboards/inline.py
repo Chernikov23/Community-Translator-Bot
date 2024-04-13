@@ -8,3 +8,11 @@ main = InlineKeyboardMarkup(
         ]
     ]
 )
+
+langs = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text='RU🇷🇺', callback_data='ru')
+        ]
+    ]
+)

@@ -4,10 +4,12 @@ from keyboards import *
 
 router = Router()
 
-async def chosLang(msg: Message, call: CallbackQuery):
-    calld = call.data
-    
-    await call.message.edit_text(
+
+@router.callback_query()
+async def proc_call(call: CallbackQuery):
+    calb = call.data
+    if calb == 'chl':
+        await call.message.edit_text(
         f"Choose the language of translation",
         reply_markup=inline.langs
     )
